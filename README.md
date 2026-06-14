@@ -27,7 +27,7 @@ Welcome to my portfolio! I'm a **Software Engineer** specializing in building in
 
 ## 🌐 Live Demo
 
-- **Live URL:** [Portfolio Live Demo](https://your-live-url.vercel.app) *(Update this link after deployment)*
+- **Live URL:** https://dileepkumar-flax.vercel.app/
 
 ## 🚀 Features
 
