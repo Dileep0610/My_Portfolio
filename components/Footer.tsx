@@ -1,0 +1,17 @@
+'use client';
+import React from 'react';
+
+const Footer = () => {
+  return (
+    <footer className="w-full bg-light-surface dark:bg-surface border-t border-light-border dark:border-border p-8 text-light-text-secondary dark:text-text-secondary">
+      <div className="max-w-6xl mx-auto flex justify-center sm:justify-start text-center sm:text-left">
+        <div>
+          <h3 className="font-heading text-2xl font-bold gradient-text mb-1">Kothakota Dileep Kumar</h3>
+          <p className="text-sm">&copy; {new Date().getFullYear()} Kothakota Dileep Kumar. All rights reserved.</p>
+        </div>
+    </div>
+  </footer>
+);
+};
+
+export default Footer; 

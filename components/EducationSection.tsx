@@ -1,0 +1,66 @@
+'use client';
+import React from 'react';
+import { education } from '../data/education';
+import { motion } from 'framer-motion';
+import { AcademicCapIcon, BriefcaseIcon } from '@heroicons/react/24/solid';
+import { GlowingEffect } from './ui/glowing-effect';
+
+const EducationSection = () => {
+  return (
+    <section id="education" className="py-16 md:py-24">
+      <div className="max-w-6xl mx-auto px-4 md:px-12">
+        <div className="flex flex-col gap-2 mb-10 text-center">
+          <h2 className="text-4xl md:text-6xl font-heading font-bold gradient-text">
+            Education & Activities
+          </h2>
+          <p className="text-lg md:text-xl text-slate-500 dark:text-slate-400 font-medium max-w-2xl mx-auto">
+            My academic journey and professional experiences.
+          </p>
+        </div>
+        <div className="relative">
+          {/* Timeline Line */}
+          <div className="absolute left-4 md:left-1/2 top-4 -translate-x-1/2 h-[calc(100%-2rem)] w-0.5 bg-border" />
+
+          {education.map((item, index) => (
+            <div key={index} className="relative mb-12 last:mb-0">
+              {/* Icon */}
+              <div className="absolute left-4 md:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-surface border-4 border-background flex items-center justify-center z-10">
+                {item.type === 'degree' ? (
+                  <AcademicCapIcon className="h-4 w-4 text-text-primary" />
+                ) : (
+                  <BriefcaseIcon className="h-4 w-4 text-text-primary" />
+                )}
+              </div>
+
+              {/* Content */}
+              <div className={`w-full flex ${index % 2 !== 0 ? 'md:justify-end' : 'md:justify-start'}`}>
+                <div className="w-full md:w-5/12 pl-12 md:pl-0">
+                  <motion.div
+                    initial={{ opacity: 0, x: index % 2 !== 0 ? 50 : -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.2, duration: 0.5 }}
+                    className="relative bg-black/40 backdrop-blur-xl p-6 rounded-2xl border border-white/5 shadow-lg"
+                  >
+                    <GlowingEffect spread={35} glow={true} disabled={false} proximity={56} inactiveZone={0.01} borderWidth={1.5} />
+                    <p className="education-card-date relative z-10 text-sm font-semibold mb-1">{item.date}</p>
+                    <h3 className="education-card-title relative z-10 font-heading text-xl font-bold mb-2">{item.title}</h3>
+                    <p className="education-card-institution relative z-10 text-sm font-semibold">{item.institution}</p>
+                    {(item.gpa && item.gpa !== 'N/A') && (
+                      <p className="education-card-grade relative z-10 text-sm font-semibold mt-2">Grade: {item.gpa}</p>
+                    )}
+                    {item.description && (
+                      <p className="education-card-description relative z-10 text-sm mt-3 leading-relaxed">{item.description}</p>
+                    )}
+                  </motion.div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default EducationSection;
