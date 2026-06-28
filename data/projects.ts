@@ -1,5 +1,13 @@
 export const projects = [
   {
+    name: 'Sustainable Waste Management',
+    description: 'Built a full-stack AI-powered waste management platform using React, Flask, Firebase, and Groq LLaMA 3.3-70B. Features include AI waste classification, disposal guidance, recycling recommendations, collection center mapping, Firebase authentication, scan history, and sustainability analytics dashboards.',
+    tags: ['React', 'Flask', 'Python', 'Firebase', 'Firestore', 'Firebase Authentication', 'Groq AI', 'LLaMA 3.3-70B', 'Generative AI', 'Chart.js', 'Leaflet.js', 'OpenStreetMap', 'Axios', 'Tailwind CSS'],
+    github: 'https://github.com/Dileep0610/Sustainable-Waste-Management',
+    demo: 'https://sustainable-waste-management-nu.vercel.app',
+    image: '/WasteGuideAI.jpg',
+  },
+  {
     name: 'RakthaSetu',
     description: 'Developed a full-stack blood donation platform using React and Firebase, enabling donor registration, donor search, emergency blood requests, and real-time push notifications through Firebase Cloud Messaging to connect donors with patients during critical situations.',
     tags: ['React', 'Firebase', 'Firestore', 'Firebase Authentication', 'Firebase Cloud Messaging', 'JavaScript', 'Tailwind CSS'],
