@@ -1,5 +1,12 @@
 # Kothakota Dileep Kumar - Portfolio Website 🚀
 
+<div align="center">
+  <img src="public/photo.png" alt="Kothakota Dileep Kumar" width="200" style="border-radius: 50%"/>
+  
+  [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=for-the-badge&logo=github)](https://github.com/Dileep0610)
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/dileep0610/)
+</div>
+
 ## 🌟 Overview
 
 Welcome to my portfolio! I'm a **Software Engineer** specializing in building intelligent systems, scalable backends, and cinematic web experiences. This is a premium, high-performance portfolio built with **Next.js**, **TypeScript**, and **Framer Motion**, featuring a cinematic dark-mode aesthetic.
@@ -20,7 +27,7 @@ Welcome to my portfolio! I'm a **Software Engineer** specializing in building in
 
 ## 🌐 Live Demo
 
-- **Live URL:** [Portfolio Live Demo](https://your-live-url.vercel.app) *(Update this link after deployment)*
+- **Live URL:** https://dileepkumar-flax.vercel.app/
 
 ## 🚀 Features
 
