@@ -7,6 +7,7 @@ export const certificates = [
     link: 'https://drive.google.com/file/d/1PNTRmKJfH1DHwQneGFdQXIC88QdEFWW_/view?usp=sharing',
     icon: '🌍',
   },
+
   {
     title: 'Python Full Stack',
     description: 'Successfully completed a 10-week Python Full Stack internship, gaining practical exposure to HTML, CSS, Bootstrap, JavaScript, Django, SQL, and Git while strengthening frontend, backend, and database management skills.',
@@ -22,6 +23,14 @@ export const certificates = [
     category: 'Internship',
     link: 'https://drive.google.com/file/d/1x0-ACEtw8-6LgMzSdhcEUubqjw8u_Eus/view?usp=sharing',
     icon: '💻',
+  },
+  {
+    title: 'Professional Certificate in Generative AI & Machine Learning',
+    description: 'Successfully completed the Executive Professional Certification Program at IITI DRISHTI CPS Foundation, IIT Indore, gaining hands-on knowledge in Generative AI, Machine Learning, Python, prompt engineering, and AI-powered application development.',
+    year: '2026',
+    category: 'Certification',
+    link: 'https://drive.google.com/file/d/11IQHClm1g7YiHekcNuFbFn7006Y8M17Z/view?usp=sharing',
+    icon: '🏆',
   },
   {
     title: 'Microsoft SQL Certification Training',
@@ -98,7 +107,7 @@ export const certificates = [
   },
   {
     title: 'CCNA: Switching, Routing, and Wireless Essentials (SRWE)',
-    description:'Successfully completed Cisco Networking Academy\'s CCNA: Switching, Routing, and Wireless Essentials course, gaining knowledge of switching technologies, VLANs, inter-VLAN routing, wireless networking, network security concepts, and router and switch configuration.',
+    description: 'Successfully completed Cisco Networking Academy\'s CCNA: Switching, Routing, and Wireless Essentials course, gaining knowledge of switching technologies, VLANs, inter-VLAN routing, wireless networking, network security concepts, and router and switch configuration.',
     year: '2026',
     category: 'Certification',
     link: 'https://drive.google.com/file/d/1y8K2MHVEjl7tVV1jMO9OO44YAiVBpxbN/view?usp=sharing',
