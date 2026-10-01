@@ -7,7 +7,14 @@ export const certificates = [
     link: 'https://drive.google.com/file/d/1PNTRmKJfH1DHwQneGFdQXIC88QdEFWW_/view?usp=sharing',
     icon: '🌍',
   },
-
+  {
+    title: 'Vibe Coding Intern',
+    description: 'Successfully completed a 2-month Vibe Coding internship, gaining practical exposure to AI-assisted software development, prompt engineering, and modern application development while strengthening skills in building software solutions with AI tools.',
+    year: '2026',
+    category: 'Internship',
+    link: 'https://drive.google.com/file/d/1hpZPggZ6HRcLSZH5_C1mnkbRf99qxE5L/view?usp=drive_link',
+    icon: '🤖',
+  },
   {
     title: 'Python Full Stack',
     description: 'Successfully completed a 10-week Python Full Stack internship, gaining practical exposure to HTML, CSS, Bootstrap, JavaScript, Django, SQL, and Git while strengthening frontend, backend, and database management skills.',
