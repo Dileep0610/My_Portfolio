@@ -20,4 +20,11 @@ export const experience = [
         description: 'Gained practical exposure to Artificial Intelligence, Machine Learning, data analytics, and customer sentiment analysis through hands-on learning in Introduction to Modern AI, Data Analytics Essentials, and AI: Analyze Customer Reviews.',
         type: 'internship',
     },
+    {
+        title: 'Vibe Coding Intern',
+        institution: 'SmartBridge Educational Services Pvt. Ltd.',
+        date: '2026',
+        description: 'Developed practical skills in AI-assisted software development, prompt engineering, and application building by applying Vibe Coding techniques to create and enhance software solutions.',
+        type: 'internship',
+    },
 ];
