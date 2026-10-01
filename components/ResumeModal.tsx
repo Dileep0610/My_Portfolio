@@ -126,9 +126,9 @@ const ResumeModal = ({ isOpen, onClose }: ResumeModalProps) => {
               )}
 
               <iframe
-                src="/K_Dileep_Kumar.pdf#toolbar=1&navpanes=0&scrollbar=1"
-                className="w-full h-full invert dark:invert-0 opacity-90 transition-opacity duration-500"
-                title="Resume PDF"
+                src="/K_Dileep_Kumar.pdf"
+                className="w-full h-full transition-opacity duration-500"
+                title="Current Resume"
                 style={{ border: 'none' }}
                 onLoad={() => setIsLoading(false)}
               />
