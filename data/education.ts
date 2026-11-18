@@ -10,8 +10,8 @@ export const education = [
     type: 'Professional Certificate Program',
     title: 'Professional Certificate Program in Artificial Intelligence and Data Science (PCP-AI&DS)',
     institution: 'Indian Institute of Technology Indore',
-    date: 'Aug 2025 - Present',
-    description: 'Pursuing a credit-based Professional Certificate Program in Artificial Intelligence and Data Science, covering Machine Learning, Data Science, Python Programming, Statistics, Data Analytics, and AI applications through academic coursework, practical assignments, and industry-oriented learning.'
+    date: '2025 - 2026',
+    description: 'Completed a credit-based Professional Certificate Program in Artificial Intelligence and Data Science, covering Machine Learning, Data Science, Python Programming, Statistics, Data Analytics, and AI applications through academic coursework, practical assignments, and industry-oriented learning.'
   },
   {
     type: 'Higher Secondary Education',

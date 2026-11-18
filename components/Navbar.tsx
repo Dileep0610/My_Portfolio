@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
   IconHome,
   IconUser,
@@ -16,45 +16,9 @@ import { FloatingDock } from './ui/floating-dock';
 
 
 const Navbar = () => {
-  const [activeSection, setActiveSection] = useState('home');
   const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY + 200;
-
-      const sections = [
-        { id: 'home', element: document.getElementById('home') },
-        { id: 'about', element: document.getElementById('about') },
-        { id: 'skills', element: document.getElementById('skills') },
-        { id: 'projects', element: document.getElementById('projects') },
-        { id: 'achievements', element: document.getElementById('achievements') },
-        { id: 'contact', element: document.getElementById('contact') },
-      ];
-
-      let currentSection = 'home';
-
-      for (const { id, element } of sections) {
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          const elementTop = window.scrollY + rect.top;
-          const elementBottom = elementTop + rect.height;
-
-          if (scrollPosition >= elementTop && scrollPosition < elementBottom) {
-            currentSection = id;
-          }
-        }
-      }
-
-      setActiveSection(currentSection);
-    };
-
-    handleScroll();
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const handleNavigation = (section: string) => {
     if (section === 'resume') {

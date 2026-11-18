@@ -1,14 +1,9 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Globe from './Globe';
-import { useClientTheme } from '../hooks/useClientTheme';
-import SocialsFloat from './SocialsFloat';
 import FloatingCode from './FloatingCode';
-import NeuralBackground from './ui/flow-field-background';
 import { FaFileAlt, FaCode } from 'react-icons/fa';
 import ResumeModal from './ResumeModal';
-import { GlowingEffect } from './ui/glowing-effect';
 
 const HeroSection = () => {
   const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
@@ -24,25 +19,6 @@ const HeroSection = () => {
     }, 3000);
     return () => clearInterval(timer);
   }, [roles.length]);
-
-  const { resolvedTheme, mounted } = useClientTheme();
-
-  const isDarkMode = mounted && resolvedTheme === 'dark';
-
-  // Ensure consistent colors between server and client renders
-  const brainGradientStops = isDarkMode
-    ? ["#ffffff", "#e5e5e5", "#cccccc", "#b3b3b3"]
-    : ["#000000", "#1a1a1a", "#333333", "#4d4d4d"];
-
-  const personGradientStops = isDarkMode
-    ? ["#ffffff", "#e5e5e5"]
-    : ["#000000", "#1a1a1a"];
-
-  // Prevent hydration issues with random values
-  const staticParticlePositions = mounted ? null : Array.from({ length: 30 }, (_, i) => ({
-    left: `${(i * 37) % 100}%`,
-    top: `${(i * 23) % 100}%`
-  }));
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -136,8 +112,6 @@ const HeroSection = () => {
       <div className="opacity-30 dark:opacity-20 pointer-events-none">
         <FloatingCode />
       </div>
-
-      <SocialsFloat />
 
       {/* Scroll Indicator */}
       <motion.a

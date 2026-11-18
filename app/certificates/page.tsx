@@ -3,9 +3,7 @@ import React, { useState } from 'react';
 import { certificates } from '../../data/certificates';
 import { motion } from 'framer-motion';
 import { FaExternalLinkAlt } from 'react-icons/fa';
-import Navbar from '../../components/Navbar';
 import { GlowingEffect } from '../../components/ui/glowing-effect';
-import GlobalBackground from '../../components/GlobalBackground';
 
 const CertificatesPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -17,11 +15,8 @@ const CertificatesPage = () => {
     : certificates.filter(cert => cert.category === selectedCategory);
 
   return (
-    <>
-      <GlobalBackground />
-      <div className="min-h-screen bg-transparent relative">
-        <Navbar />
-        <div className="max-w-6xl mx-auto px-4 py-24">
+    <div className="min-h-screen bg-transparent relative">
+      <div className="max-w-6xl mx-auto px-4 py-24">
           {/* Header */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -136,7 +131,6 @@ const CertificatesPage = () => {
           )}
         </div>
       </div>
-    </>
   );
 };
 
